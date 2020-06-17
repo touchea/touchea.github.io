@@ -6,7 +6,7 @@ html, body{
     width: 100%;
     height: 100%;
     font-size: 14px;
-    font-weight: nomal;
+    font-weight: normal;
 }
 .background{
     width: 100%;
@@ -77,8 +77,8 @@ a.active, .nav a:hover{
     font-family: Verdana;
     text-transform: uppercase;
 }
-.home hi{
-    font-size: 95;
+.home h1{
+    font-size: 95px;
     padding-right: 90px;
     border-bottom: 1px solid white;
     text-transform: uppercase;
@@ -87,4 +87,61 @@ a.active, .nav a:hover{
     font-size: 28px;
     padding: 5px 0;
     opacity: 0.6;
+}
+
+.about{
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    color: white;
+    font-family: century;
+    padding: 0 60px;
+}
+.about p{
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+
+.gallery{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: white;
+    padding: 0 60px;
+    display: none;
+}
+.gallery .image{
+    width: 25%;
+    margin: 2%;
+    float: left;
+}
+.image img{
+    width: 100%;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    transform: scale(1);
+    -webkit-tranform: scale(1);
+}
+.image img:hover{
+    transform:scale(1.2);
+}
+.video {
+    margin: 0 anto;
+    width: 1000px;
+}
+.videowrapper{
+    position: relative;
+    padding-bottom: 55.25%;
+    padding-top: 25px;
+    height: 0px;
+}
+.videowrapper iframe{
+    position: absolute;
+    left:0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 50%;
+    width: 50%;
 }

@@ -10,19 +10,72 @@
 
 <div class="nav">
     <a class="a active" href="#">HOME</a>
-    <a class="b" href="#">GALLERY</a>
-    <a class="c" href="#">VIDEO</a>
-    <a class="d" href="#">ABOUT</a>   
+    <a class="b" href="#">ABOUT</a>
+    <a class="c" href="#">GALLERY</a>
+    <a class="d" href="#">VIDEO</a>   
 </div>
    <div class="content">
        <div class="home">
-        <h1>first Page </h1>
-        <h3>first Page </h3>
+        <h1>Flowers</h1>
+        <h3>A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Magnoliophyta, also called angiosperms). The biological function of a flower is to affect reproduction, usually by providing a mechanism for the union of sperm with eggs. Flowers may facilitate outcrossing (fusion of sperm and eggs from different individuals in a population) resulting from cross pollination or allow selfing (fusion of sperm and egg from the same flower) when self pollination occurs. Some flowers produce diaspores without fertilization (parthenocarpy). Flowers contain sporangia and are the site where gametophytes develop. Many flowers have evolved to be attractive to animals, so as to cause them to be vectors for the transfer of pollen. After fertilization, the ovary of the flower develops into fruit containing seeds.</h3>
+
+        <p style="color:blue;"> From Wikipedia. Retrieved from https://en.wikipedia.org/wiki/Flower</p>
        </div>
+
+       <div class="about">
+        <img src="Welsh_Springer_Spaniel_1.jpg" width="1000" height="740"
+             alt="Piture of cute dog" title="Running with is not recommended"
+             style="float:left; margin-right:20px;margin-bottom:5px;
+             border: solid black 1px; padding:2px;"/>
+             <p>
+                A flower develops on a modified shoot or axis from a determinate apical meristem (determinate meaning the axis grows to a set size). It has compressed internodes, bearing structures that in classical plant morphology are interpreted as highly modified leaves.[11] Detailed developmental studies, however, have shown that stamens are often initiated more or less like modified stems (caulomes) that in some cases may even resemble branchlets.[5][1] Taking into account the whole diversity in the development of the androecium of flowering plants, we find a continuum between modified leaves (phyllomes), modified stems (caulomes), and modified branchlets (shoots).[12][13]</p>
+
+             <p>
+                The transition to flowering is one of the major phase changes that a plant makes during its life cycle. The transition must take place at a time that is favorable for fertilization and the formation of seeds, hence ensuring maximal reproductive success. To meet these needs a plant is able to interpret important endogenous and environmental cues such as changes in levels of plant hormones and seasonable temperature and photoperiod changes.[14] Many perennial and most biennial plants require vernalization to flower. The molecular interpretation of these signals is through the transmission of a complex signal known as florigen, which involves a variety of genes, including Constans, Flowering Locus C and Flowering Locus T. Florigen is produced in the leaves in reproductively favorable conditions and acts in buds and growing tips to induce a number of different physiological and morphological changes.[15]
+             </p>
+    
+            <p style="color:blue;"> From Wikipedia. Retrieved from https://en.wikipedia.org/wiki/Flower</p>
+    
+       </div>
+  
       
+       <div class= "gallery">
+           
+        <div class="image">
+            <img src="image/1.jpg" />
+
+        </div>
+        <div class="image">
+            <img src="image/2.jpg" />
+
+        </div>
+        <div class="image">
+            <img src="image/3.jpg" />
+
+        </div>
+        <div class="image">
+            <img src="image/4.jpg" />
+
+        </div>
+        <div class="image">
+            <img src="image/5.jpg" />
+        </div>
+        <p style="color:blue;"> From Wikipedia. Retrieved from https://en.wikipedia.org/wiki/Flower</p>
+       
+       <div class="video">
+          <div class="videowrapper">
+            <iframe src="https://www.youtube.com/embed/tBUoWDKdrvI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <iframe  src="https://www.youtube.com/embed/CGgrcCoWB4A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <h1 style="color:blue;"> THE HOMEPPINESS. Retrieved from https://www.youtube.com/channel/UCllmVjrhzlbtcWNjNsTtm8Q<h1>
+          </div>
+        
+        </div>
+       
    </div>
 
 </div>
+
 
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript">
@@ -34,7 +87,44 @@
             $('a').removeClass('active');
             $(selected).addClass('active');
         });
-    
+
+        var $a =$('.a'),
+        $b =$('.b'),
+        $c =$('.c'),
+        $d =$('.d'),
+        $home =$('.home'),
+        $about = $('.about'),
+        $gallery  = $('.gallery ');
+        $video = $('.video'),
+        
+        $a.click(function(){
+            $home.fadeIn();
+            $about.fadeOut();
+            $gallery.fadeOut();
+            $video.fadeOut();
+            
+        });
+        $b.click(function(){
+            $about.fadeIn();
+            $home.fadeOut();
+            $gallery.fadeOut();
+            $video.fadeOut();
+           
+        });
+        $c.click(function(){
+            $gallery.fadeIn();
+            $home.fadeOut();
+            $about.fadeOut();
+            $video.fadeOut();
+           
+        });
+        $d.click(function(){
+            $video.fadeIn();
+            $home.fadeOut();
+            $about.fadeOut();
+            $gallery.fadeOut();
+          
+        });
     });
 </script>
 
